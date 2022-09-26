@@ -247,5 +247,9 @@ textarea {
 
 .btnLetters:active {
     background-color: grey;
+}
 
+footer{
+    position: fixed;
+    bottom: 0;
 }
