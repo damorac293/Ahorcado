@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <title>HANGED</title>
+</head>
+
+<body>
+  <div class="glassBG"></div>
+
+    
+  <section class="popUp" id="statusPopUP">
+    <div class='modalContainer' id="mainModalCont">
+      <form action="">
+        <input id="sendText" class="sndTbx" type="password" autocomplete="false" placeholder="Ingrese una palabra" required/> 
+        <button class="btnStart" type="submit" id="btnSend" onclick="getSendWord(),popUpStatus(1),restartPage()">Iniciar</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="main" id="topContainer">
+    <!-- <h1>EL JUEGO DEL AHORCADO</h1> -->
+    <label id="tries" for=""></label>
+    <textarea name="result" id="result" cols="30" rows="1" readonly="true" style="resize: none;"></textarea>
+    <div class="lives">
+      <i name="lifeIcon" id="cowIcon" class="fa-solid fa-cow"></i>
+      <i name="lifeIcon" id="cowIcon" class="fa-solid fa-cow"></i>
+      <i name="lifeIcon" id="cowIcon" class="fa-solid fa-cow"></i>
+      <i name="lifeIcon" id="cowIcon" class="fa-solid fa-cow"></i>
+      <i name="lifeIcon" id="cowIcon" class="fa-solid fa-cow"></i>
+    </div>
+  </div>
+  <!-- <div class="second"> -->
+  <div class="buttons">
+    <div class="btnFirstRow">
+      <input name="Q" type="text" value="Q" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="W" type="text" value="W" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="E" type="text" value="E" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="R" type="text" value="R" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="T" type="text" value="T" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="Y" type="text" value="Y" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="U" type="text" value="U" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="I" type="text" value="I" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="O" type="text" value="O" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="P" type="text" value="P" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+    </div>
+    <div class="btnMidRow">
+      <input name="A" type="text" value="A" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="S" type="text" value="S" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="D" type="text" value="D" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="F" type="text" value="F" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="G" type="text" value="G" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="H" type="text" value="H" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="J" type="text" value="J" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="K" type="text" value="K" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="L" type="text" value="L" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+    </div>
+    <div class="btnLastRow">
+      <input name="X" type="text" value="X" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="C" type="text" value="C" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="Z" type="text" value="Z" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="V" type="text" value="V" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="B" type="text" value="B" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="N" type="text" value="N" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+      <input name="M" type="text" value="M" class="btnLetters" readonly="true" onclick="btnValue(value)" />
+    </div>
+    <!-- </div> -->
+  </div>
+  <script src="../js/functions.js"></script>
+  <script src="https://kit.fontawesome.com/3252299651.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
